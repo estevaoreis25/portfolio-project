@@ -3,7 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import 'scss/colors';
+@import 'scss/tipography';
 
 body{
-  background-color: #0E0E0E;
+  background-color: $black-dark;
 }
+ header{
+   width: auto;
+ }
+
+ .border {
+   border: 1px solid red;
+ }
+@import 'scss/spacing';
+@import 'scss/layout';

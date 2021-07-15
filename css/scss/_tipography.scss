@@ -1,0 +1,84 @@
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: $white-normal;
+  font-weight:400;
+}
+
+a {
+  text-decoration: none;
+}
+.link {
+  padding: 8px 24px;
+  font-size: 24px;
+  position: relative;
+
+  transition: .5s ease;
+
+  &::after{
+    content:'';
+    display: block;
+
+    position: absolute;
+    top:100%;
+    left: 0;
+
+    width: 0%;
+    height: 2px;
+
+    transform: translate(15%, -300%);
+    transition: .8s ease;
+
+    background-color:$white-normal;
+  }
+
+  &:hover{
+    opacity: 0.5;
+
+    &::after{
+      width: 80%;
+    }
+  }
+}
+h1 {
+  font-size: 96px;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 960px){
+  h1{
+    font-size: 64px;
+  }
+
+  h2{
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 72;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 40;
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 32;
+  line-height: 130%;
+}
+
+h5 {
+  font-size: 24;
+  line-height: 140%;
+}
+
+h6 {
+  font-size: 18;
+  line-height: 150%;
+}
+
+.mask{
+  
+}

@@ -28,7 +28,7 @@ a {
   display: block;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 0%;
   width: 0%;
   height: 2px;
   -webkit-transform: translate(15%, -300%);
@@ -61,28 +61,34 @@ h1 {
 }
 
 h2 {
-  font-size: 72;
+  font-size: 72px;
   line-height: 110%;
 }
 
 h3 {
-  font-size: 40;
+  font-size: 40px;
   line-height: 120%;
 }
 
 h4 {
-  font-size: 32;
+  font-size: 32px;
   line-height: 130%;
 }
 
 h5 {
-  font-size: 24;
+  font-size: 24px;
   line-height: 140%;
 }
 
 h6 {
-  font-size: 18;
+  font-size: 18px;
   line-height: 150%;
+}
+
+.mask {
+  background: linear-gradient(255deg, #2DC7ED 0%, #538BF0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
